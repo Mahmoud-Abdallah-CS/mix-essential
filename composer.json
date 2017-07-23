@@ -12,6 +12,6 @@
             "Mix\\Essential\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }
