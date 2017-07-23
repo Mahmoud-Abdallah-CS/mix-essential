@@ -1,0 +1,11 @@
+{
+    "name": "mixframework/mix-essential",
+    "description": "essential",
+    "authors": [
+        {
+            "name": "Mahmoud-Abdallah",
+            "email": "mahmoud.abdallah.cs@gmail.com"
+        }
+    ],
+    "require": {}
+}
