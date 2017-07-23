@@ -28,6 +28,11 @@ class ArrayCollection implements ArrayAccess, IteratorAggregate
             : new static( !is_array($value)?[$value]:$value );
     }
 
+    public static function unwrap($value)
+    {
+        return $value instanceof self ? $value->all() : $value;
+    }
+
     protected function getArrayableItems($items)
     {
         if (is_array($items)) { return $items; }
