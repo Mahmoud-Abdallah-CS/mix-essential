@@ -40,6 +40,8 @@ class ArrayCollection implements ArrayAccess, IteratorAggregate
         return (new static(range(1, $amount)))->map($callback);
     }
 
+    public function all() { return $this->items; }
+
     public function map(callable $callback)
     {
         $keys = array_keys($this->items);
