@@ -21,6 +21,13 @@ class ArrayCollection implements ArrayAccess, IteratorAggregate
         return new static($items);
     }
 
+    public static function wrap($value)
+    {
+        return $value instanceof self
+            ? new static($value)
+            : new static( !is_array($value)?[$value]:$value );
+    }
+
     protected function getArrayableItems($items)
     {
         if (is_array($items)) { return $items; }
